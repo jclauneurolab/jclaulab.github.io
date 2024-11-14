@@ -1,0 +1,17 @@
+[
+    {
+        "title": "News Title 1",
+        "link": "news_pages/news1.html",
+        "date": "2024-06-01"
+    },
+    {
+        "title": "News Title 2",
+        "link": "news_pages/news2.html",
+        "date": "2024-05-15"
+    },
+    {
+        "title": "News Title 3",
+        "link": "news_pages/news3.html",
+        "date": "2024-04-20"
+    }
+]

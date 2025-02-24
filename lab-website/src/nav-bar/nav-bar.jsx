@@ -20,7 +20,7 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} className="menu-icon" />
                 </button>
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/people">People</a></li>
                     <li><a href="/papers">Papers</a></li>
                     <li><a href="/news">News</a></li>

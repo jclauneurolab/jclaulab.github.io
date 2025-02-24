@@ -1,0 +1,108 @@
+.peoplePage {
+    margin-top: 10px;
+}
+
+
+.people-heading {
+    color: red;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.people-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.people-heading-item {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white; 
+    padding: 0 10px;
+    position: absolute;
+    top: -8px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.section-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.person-cont {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.headshot-img-cont {
+    width: 150px;
+    height: 150px;
+    border: 2px red solid;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.head-shot {
+    border-radius: 50%;
+    width: 150px;
+    object-fit: cover; 
+}
+
+.words-cont {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.person-position {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.person-supervisor {
+    margin-top: 5px;
+}
+
+.social-cont {
+    display:flex;
+    width: 100%;
+    justify-content:flex-start;
+    margin-top: 10px;
+}
+
+.item-cont {
+    margin-right: 10px;
+}
+
+.icon-style{
+    color: black;
+    width: 25px;
+    height: 25px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-style:hover {
+    color: #575757;
+    transform: scale(1.05); 
+}

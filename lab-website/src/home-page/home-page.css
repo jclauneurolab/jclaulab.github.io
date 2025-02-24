@@ -4,7 +4,6 @@
     display: flex; 
     flex-direction: column; 
     justify-content: flex-start; 
-    position: fixed;
     top: 0;
     left: 0;
 }
@@ -14,14 +13,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    margin-top: 200px;
 }
 
 .homePage-left {
     padding-top: 40px;
     padding-left: 30px;
     text-align: center;
-    width: 60%; 
+    width: 70%; 
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -30,14 +28,14 @@
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .slogan {
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: red;
     font-weight: bold;
     text-align: center;
@@ -45,10 +43,11 @@ p {
 }
 
 .homePage-right {
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: auto;
 }
 
 .img-cont {
@@ -61,3 +60,109 @@ p {
     width: 70%;
 }
 
+.homePage-bottom {
+    height: 300px;
+    margin-top: 30px;
+}
+
+.homePage-bottom {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.homePage-bottom-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.homePage-bottom-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.heading-item {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white; 
+    padding: 0 10px;
+    position: absolute;
+    top: -8px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.homePage-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.homePage-bottom-left,
+.homePage-bottom-right {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+@media screen and (max-width: 1405px) {
+    p {
+        font-size: 16px;
+    }
+    
+    .slogan {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    p {
+        font-size: 16px;
+    }
+    
+    .slogan {
+        font-size: 16px;
+    }
+
+    .design {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homePage-left {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .homePage-right {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+}

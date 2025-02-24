@@ -26,15 +26,37 @@ const HomePage = () => {
                     <div className='slogan'>
                         NEUROANATOMY, NEUROINFORMATICS, NEUROMODULATION, NEUROSURGERY
                     </div>
-                </div>`
+                </div>
                 <div className='homePage-right'>
                     <div className='img-cont'>
-                        <img src={design} alt='head-shot' className='design' />
+                        <img src={design} alt='design' className='design' />
                     </div>
                 </div>
             </div>
             <div className='homePage-bottom'>
-
+                <div className='homePage-bottom-top'>
+                    <div className='homePage-bottom-heading'>
+                        <div className="heading-wrapper">
+                            <hr className="line" />
+                            <div className="heading-item">Recent Papers</div>
+                        </div>
+                        <div className="heading-wrapper">
+                            <hr className="line" />
+                            <div className="heading-item">Recent News</div>
+                        </div>
+                    </div>
+                    <div className='homePage-bottom-content'>
+                        <div className='homePage-bottom-left'>
+                            {/* papers */}
+                        </div>
+                        <div className='homePage-bottom-right'>
+                            {/* news */}
+                        </div>
+                    </div>
+                </div>
+                <div className='homePage-bottom-bottom'>
+                    {/* grants the lab has gotten */}
+                </div>
             </div>
         </div>
     

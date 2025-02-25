@@ -28,6 +28,11 @@ body {
 .logo-image {
     height: 170px;
     width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .navbar-right {
@@ -38,12 +43,22 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
+    background-color: white;
+    color: white;
+    z-index: 1;
 }
 
 .nav-links li {
     margin-left: 25px;
+    background-color: white;
     justify-content: center;
+    color: white;
     align-items: center;
+    transition: color 0.3 ease, transform 0.3s ease;
+}
+
+.nav-links li:hover {
+    transform: scale(1.05); 
 }
 
 .nav-links a {
@@ -52,23 +67,27 @@ body {
     font-size: 25px;
     padding: 5px 10px;
     justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
     background-color: #575757;
     border-radius: 5px;
-    color: white
+    color: white;
+    transform: scale(1.05); 
 }
 
 .contact-button {
     border: solid 3px red;
     border-radius: 10px;
     margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-button a:hover {
     background-color: red;
     border-radius: 10px;
+    transform: scale(1.05); 
 }
 
 .menu-button {
@@ -122,10 +141,12 @@ body {
         position: absolute;
         font-size: 80px;
         cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .menu-button:hover{
         color: #575757;
+        transform: scale(1.05); 
     }
     
     .nav-links.open {

@@ -193,7 +193,14 @@
   .modal-body a:hover {
     text-decoration: underline;
   }
-  
+
+  .alumni-heading {
+    margin-top:20px;
+  }
+
+  .alumni-section {
+    margin-top:20px;
+  }
 
 @media screen and (max-width: 768px) {
     .person-cont {

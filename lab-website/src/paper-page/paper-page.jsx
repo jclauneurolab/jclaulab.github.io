@@ -5,7 +5,8 @@ import paperData from '/data/paper.json';
 const PaperPage = () => {
 
     const [selectedYear, setSelectedYear] = useState("Select Year");
-    const years = ["Select Year", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016 - Earlier"];
+    const years = ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016 - Earlier"];
+    const years_dropdown = ["Select Year", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016 - Earlier"];
     const paperRefs = useRef({});
 
     useEffect(() => {
@@ -38,7 +39,7 @@ const PaperPage = () => {
                     value={selectedYear} 
                     onChange={(e) => setSelectedYear(e.target.value)}
                 >
-                    {years.map((year) => (
+                    {years_dropdown.map((year) => (
                         <option key={year} value={year}>{year}</option>
                     ))}
                 </select>

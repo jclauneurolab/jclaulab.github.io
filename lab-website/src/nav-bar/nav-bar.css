@@ -98,6 +98,12 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1177px) {
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1021px) {
     .logo-image {
         height: 120px;
@@ -105,13 +111,7 @@ body {
     }
 }
 
-@media screen and (max-width: 935px) {
-    .nav-links a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 856px) {
     .nav-links {
         display: none;
         flex-direction: column;

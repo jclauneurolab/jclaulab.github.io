@@ -1,9 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import './home-page.css';
-import design from '/design.png'
-
+import design from '/design.png';
+import newsData from '/data/news.json'
+import paperData from '/data/paper.json'
+import NewsModal from '../news-page/news-modal';
 
 const HomePage = () => {
+
+    const latestNews = [...newsData].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+    const latestPapers = [...paperData].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+    
+    const [selectedNews, setSelectedNews] = useState(null);
+
+    const openModal = (news, event) => {
+        event.preventDefault();
+        setSelectedNews(news);
+    };
+
+    const closeModal = () => {
+        setSelectedNews(null);
+    };
+
   return (
         <div className='homePage'>
             <div className='homePage-top'>
@@ -35,22 +53,48 @@ const HomePage = () => {
             </div>
             <div className='homePage-bottom'>
                 <div className='homePage-bottom-top'>
-                    <div className='homePage-bottom-heading'>
-                        <div className="heading-wrapper">
-                            <hr className="line" />
-                            <div className="heading-item">Recent Papers</div>
+                    <div className="homePage-bottom-content">
+                        <div className="homePage-bottom-left-home">
+                            <div className="heading-wrapper">
+                                <hr className="line" />
+                                <div className="heading-item">Recent Papers</div>
+                            </div>
+                            <div className='paper-contain'>
+                                {latestPapers.map((paper, index) => (
+                                    <div className="paper-indiv-home" key={index} id={`paper-${index}`}>
+                                        <div className="paperWords-home">
+                                            <div className="paper-title-home">{paper.title}</div>
+                                            <div className="paper-authors-home">{paper.authors}</div>
+                                            <div className="paper-link-home">
+                                                <a href={paper.link} target="_blank" rel="noopener noreferrer">Read More</a>
+                                            </div>
+                                        </div>
+                                        <hr className="home-line" />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="heading-wrapper">
-                            <hr className="line" />
-                            <div className="heading-item">Recent News</div>
-                        </div>
-                    </div>
-                    <div className='homePage-bottom-content'>
-                        <div className='homePage-bottom-left'>
-                            {/* papers */}
-                        </div>
-                        <div className='homePage-bottom-right'>
-                            {/* news */}
+                        <div className="homePage-bottom-right-home">
+                            <div className="heading-wrapper">
+                                <hr className="line" />
+                                <div className="heading-item">Recent News</div>
+                            </div>
+                            <div className='news-contain'>
+                                {latestNews.map((news, index) => (
+                                    <div className="news-indiv-home" key={index} id={`news-${index}`}>
+                                        <div className="newsWords-home">
+                                            <div className="news-title-home">{news.title}</div>
+                                            <div className="news-date-home">{news.date}</div>
+                                            <div className="news-link-home">
+                                            <Link to={`/news?id=${news.id}`} onClick={(e) => openModal(news, e)}>
+                                                Read More
+                                            </Link>
+                                            </div>
+                                        </div>
+                                        <hr className="home-line" />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,6 +102,7 @@ const HomePage = () => {
                     {/* grants the lab has gotten */}
                 </div>
             </div>
+            <NewsModal selectedNews={selectedNews} closeModal={closeModal} />
         </div>
     
     );

@@ -10,7 +10,11 @@ const PaperPage = () => {
     const paperRefs = useRef({});
 
     useEffect(() => {
-        if (paperRefs.current[selectedYear]) {
+        if (selectedYear === "2016 - Earlier") {
+            if (paperRefs.current["2016"]) {
+                paperRefs.current["2016"].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } else if (paperRefs.current[selectedYear]) {
             paperRefs.current[selectedYear].scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }, [selectedYear]);

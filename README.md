@@ -91,8 +91,9 @@
 3. On the right, select your branch. On the left, select the `main` branch. 
 4. Click *Create Pull Request*.
 5. On the right-hand side, there is a section called *Reviewers*. Add Mackenzie as a reviewer. She will check over the branch before merging.
+6. That's it!
 
-## Run the project in developer mode
+## For larger contrbutions: run the project in developer mode
 1. To run the project in developer mode, navigate to the `lab-website` directory using `cd lab-website`. 
 2. Use Node.js LTS version with `nvm use --lts`, which sets Node v22.14.0 and npm v10.9.2. 
 3. Install the required dependencies with `npm install`

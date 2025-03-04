@@ -72,7 +72,8 @@
             "orcid": "",
             "google_scholar": "",
             "twitterx": "",
-        }
+        },
+            "bio": ""
     }
 ```
 

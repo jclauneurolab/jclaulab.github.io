@@ -77,6 +77,20 @@
     }
 ```
 
+### Project Page: 
+
+```json
+    {
+        "title": "Test Project",
+        "authors": "test author",
+        "paper": "Test project link", //optional
+        "github": "Test project github", //optional
+        "subheading": "short description of the project", // around a one sentence summary
+        "content": "long description of the project",
+        "img": "/project-images/test-image.png"
+    },
+```
+
 ## Pushing your changes to git:
 
 1. Once you are finished adding content, make sure you've saved all the files. 

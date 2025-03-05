@@ -44,7 +44,7 @@ const GrantCarousel = () => {
         {visibleGrants.map((grant, index) => (
           <div key={index} className="carousel-item">
             <img 
-              src={grant.img || "/grant-images/cihr.png"} 
+              src={grant.img} 
               alt={grant.title} 
             />
           </div>

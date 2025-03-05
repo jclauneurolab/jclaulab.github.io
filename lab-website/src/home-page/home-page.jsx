@@ -4,6 +4,7 @@ import './home-page.css';
 import design from '/design.png';
 import newsData from '/data/news.json'
 import paperData from '/data/paper.json'
+import GrantCarousel from './grant-carousel';
 import NewsModal from '../news-page/news-modal';
 
 const HomePage = () => {
@@ -99,8 +100,9 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className='homePage-bottom-bottom'>
-                    {/* grants the lab has gotten */}
+                    <GrantCarousel/>
                 </div>
+                <div className='footer'></div>
             </div>
             <NewsModal selectedNews={selectedNews} closeModal={closeModal} />
         </div>

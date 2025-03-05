@@ -13,7 +13,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .homePage-left {
@@ -62,9 +62,6 @@ p {
 
 .homePage-bottom {
     height: 300px;
-}
-
-.homePage-bottom {
     width: 100%;
 }
 
@@ -162,6 +159,11 @@ p {
 
 .home-line {
     margin-top: 10px;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1405px) {

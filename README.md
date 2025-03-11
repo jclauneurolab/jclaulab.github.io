@@ -2,31 +2,34 @@
 
 ## To add content to the website:
 
-1. In your terminal, clone this repository using:
+1. On Github: https://github.com/jclauneurolab/jclaulab.github.io fork a repo by selecting the 'Fork' button
+   <img width="557" alt="image" src="https://github.com/user-attachments/assets/f7c35bef-b5c0-481b-857f-a125983976ff" />
+
+2. Clone the fork you created with 
     ```bash
-    git clone https://github.com/mackenziesnyder/jclaulab.github.io.git
+    git clone https://github.com/{your-git-username}/jclaulab.github.io.git
     ```
 
-2. Make a new branch by running:
+3. Make a new branch by running:
     ```bash
     git checkout main
     git checkout -b your-branch-name
     ```
    (For example, `your-name-profile` if adding to the profile page)
 
-3. Navigate to the project directory:
+4. Navigate to the project directory:
     ```bash
     cd lab-website
     ```
 
-4. Open up VSCode. If you are on the CBS server, enter:
+5. Open up VSCode. If you are on the CBS server, enter:
     ```bash
     code .
     ```
 
-5. Navigate to the `data` folder and open the `.json` file of the page you want to add content to.
+6. Navigate to the `data` folder and open the `.json` file of the page you want to add content to.
 
-6. Using the same formatting as within the rest of the `.json` file, add your content to the top of the sheet and save the file. A list of the content needed for each section is listed below. 
+7. Using the same formatting as within the rest of the `.json` file, add your content to the top of the sheet and save the file. A list of the content needed for each section is listed below. 
 
    For the images, navigate to the `public` folder, and add the image into the respective folders for the page.
 
@@ -101,8 +104,8 @@
 
 ## To create a pull request
 
-1. navigate to [https://github.com/mackenziesnyder/jclaulab.github.io](https://github.com/mackenziesnyder/jclaulab.github.io). 
-2. Go to the *Pull Requests* tab and click *New Pull Request*. Ensure that both the head and base repositories are set to `mackenziesnyder/jclaulab.github.io`. 
+1. navigate to [https://github.com/jclauneurolab/jclaulab.github.io](https://github.com/jclauneurolab/jclaulab.github.io). 
+2. Go to the *Pull Requests* tab and click *New Pull Request*. Ensure that both the head and base repositories are set to `jclauneurolab/jclaulab.github.io`. 
 3. On the right, select your branch. On the left, select the `main` branch. 
 4. Click *Create Pull Request*.
 5. On the right-hand side, there is a section called *Reviewers*. Add Mackenzie as a reviewer. She will check over the branch before merging.
